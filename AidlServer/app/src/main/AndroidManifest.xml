@@ -15,7 +15,11 @@
         <service
             android:name=".AidlService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.aospinsight.aidlserver.AidlService" />
+            </intent-filter>
+        </service>
 
         <activity
             android:name=".MainActivity"

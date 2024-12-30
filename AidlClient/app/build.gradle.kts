@@ -39,6 +39,7 @@ android {
 }
 
 dependencies {
+    implementation(files("${rootDir}/../SampleAidl/MyAidl/build/outputs/aar/MyAidl-debug.aar"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

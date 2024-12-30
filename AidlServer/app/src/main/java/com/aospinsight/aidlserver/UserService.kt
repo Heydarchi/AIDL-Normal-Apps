@@ -11,12 +11,12 @@ class UserInterface : IUserInterface.Stub() {
     }
 
     override fun getUser(userId: Int): User {
-        lateinit var addr : Address
+        val addr = Address()
         addr.street = "Nordstan"
         addr.city = "Gothenburg"
         addr.postalCode = "41105"
 
-        lateinit var user : User
+        val user = User()
         user.id = userId
         user.name = "John Doe"
         user.address = addr
