@@ -1,3 +1,5 @@
+import com.github.javaparser.utils.ProjectRoot
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
@@ -39,6 +41,7 @@ android {
 }
 
 dependencies {
+    implementation(files("${rootDir}/../SampleAidl/MyAidl/build/outputs/aar/MyAidl-debug.aar"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

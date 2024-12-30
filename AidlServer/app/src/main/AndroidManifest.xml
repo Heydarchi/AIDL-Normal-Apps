@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AidlServer"
         tools:targetApi="31">
+        <service
+            android:name=".AidlService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.aospinsight.aidlserver.AidlService" />
+            </intent-filter>
+        </service>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
